@@ -220,9 +220,7 @@ Admira’s Teams integration enables **real-time communication** between automat
 
 📧 [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)
 
-🌐 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312)
-
-[GitHub](https://github.com/okpunosolomon)
+🌐 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312)   [GitHub](https://github.com/okpunosolomon)
 
 ---
 
