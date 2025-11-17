@@ -1,4 +1,4 @@
-# 📄 BRD, UAT & User Guide — Admira Autonomous Agent  
+# 📄 BRD, UAT & User Guide  Admira Autonomous Agent  
 **Client:** Admiral University Nigeria  
 **Consultant:** Solomon Okpuno – Business & Power Platform Consultant  
 **Platform:** Microsoft Power Platform (Copilot Studio, Power Automate, SharePoint, Teams)
