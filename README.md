@@ -141,6 +141,7 @@ Admira-Autonomous-Agent/
 ├── Visuals/
 │   ├── Copilot studio Interface.png
 │   ├── Admira System Topics.png
+│   ├── Admira Custom Topics.png
 │   ├── Admira Knowledge Base.png
 │   ├── Accomodation Booking Cloud Automate Flow.png
 │   ├── TEAMS NOTIFICATION.png
@@ -154,28 +155,34 @@ Admira-Autonomous-Agent/
 
 ## 📎 Additional Visuals
 
-The visuals below provide insight into Admira’s internal architecture, design interface, and notification logic.
+The visuals below provide insight into Admira’s internal architecture, conversational topic design, and notification logic.
 
 ---
 
 ### 🧠 Copilot Studio Interface
 
-The **Copilot Studio Interface** is the control center of Admira.
-It manages **conversational topics**, **knowledge sources**, and **integration triggers** that connect to Power Automate and Teams.
-Each topic represents a business scenario such as hostel requests, result checks, or tuition inquiries.
+The **Copilot Studio Interface** serves as Admira’s command center.
+It manages **custom topics**, **knowledge bases**, and **Power Automate integrations** that make conversations dynamic and context-aware.
 
 ![Copilot Studio Interface](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Copilot%20studio%20Interface.png?raw=true)
 
 ---
 
-### 🧩 System Topics & Knowledge Base
+### 🧩 System Topics, Custom Topics & Knowledge Base
 
-Admira combines **System Topics** for core intents (greetings, handoffs, feedback) with **Custom Topics** for institutional operations.
-The **Knowledge Base** consolidates data from Admiral University’s official information sources, ensuring factual, policy-aligned responses.
+Admira combines three intelligent conversation layers that power its natural flow:
+
+1. **System Topics** – Default intents such as greetings, handoffs, and feedback capture.
+2. **Custom Topics** – Institution-specific functions like tuition queries, hostel booking, and result checking.
+3. **Knowledge Base** – Structured responses sourced from official institutional data for accuracy and consistency.
 
 #### System Topics
 
 ![System Topics](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Admira%20System%20Topics.png?raw=true)
+
+#### Custom Topics
+
+![Custom Topics](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Admira%20Custom%20Topics.png?raw=true)
 
 #### Knowledge Base
 
@@ -185,12 +192,12 @@ The **Knowledge Base** consolidates data from Admiral University’s official in
 
 ### 💬 Teams Notification Example
 
-Admira’s Teams integration enables **bi-directional communication** between automation and staff.
-Notifications are powered by **Adaptive Cards**, delivering contextual alerts directly to Teams — such as hostel approvals or feedback summaries.
+Admira’s Teams integration enables **real-time communication** between automation and human oversight.
+**Adaptive Cards** deliver actionable updates to both students and administrators — including hostel approvals, tuition inquiries, or result status changes.
 
 ![Teams Notification](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/TEAMS%20NOTIFICATION.png?raw=true)
 
-*These cards improve responsiveness, track interactions, and maintain a documented audit trail within the Microsoft 365 environment.*
+*These cards promote fast feedback loops and maintain a verifiable digital audit trail within Microsoft Teams.*
 
 ---
 
@@ -216,10 +223,8 @@ Notifications are powered by **Adaptive Cards**, delivering contextual alerts di
 
 ## 🧱 Summary
 
-The **Admira Autonomous Agent** showcases how Power Platform can operationalize **AI-driven transformation** in higher education.
-It bridges technology and human experience — providing a practical model for universities aiming to modernize support, increase transparency, and sustain scalable automation.
+The **Admira Autonomous Agent** showcases how Microsoft Power Platform can drive **AI-enabled digital transformation** in higher education.
+By connecting people, data, and automation, Admira demonstrates how institutions can modernize support delivery, strengthen governance, and achieve operational excellence.
 
-> **Admira represents the future of intelligent student engagement — simple, automated, and human-aware.**
+> **Admira represents the next generation of student engagement — automated, scalable, and human-centered.**
 
-```
-```
