@@ -5,12 +5,11 @@
 
 ## 🧠 Executive Overview  
 
-The **Admira Autonomous Agent** is an AI-powered student engagement system developed on the **Microsoft Power Platform** to modernise and automate student services at **Admiral University Nigeria**.  
-
-The solution integrates **Copilot Studio**, **Power Automate**, **SharePoint**, and **Microsoft Teams** to handle high-volume student inquiries including **tuition fee breakdown**, **hostel booking**, **result checks**, and **admission status verification**  all through a single conversational interface.  
+The **Admira Autonomous Agent** is an enterprise-grade, AI-powered student engagement system built on the **Microsoft Power Platform**.  
+It streamlines student services—**tuition fee inquiries**, **hostel booking**, **result checking**, and **admission status verification**—into a single, intelligent conversational interface powered by **Copilot Studio** and **Power Automate**.  
 
 **Objective:**  
-Deliver a governed, scalable, and low-code automation framework that enhances service speed, transparency, and student experience across the university.  
+Deliver a secure, scalable, and fully governed automation framework that enhances responsiveness, transparency, and student experience across Admiral University’s academic operations.
 
 ---
 
@@ -22,88 +21,76 @@ Deliver a governed, scalable, and low-code automation framework that enhances se
 | **Toolchain** | Azure DevOps, Power Platform, GitHub |
 | **Project Manager / Scrum Master** | Solomon Okpuno |
 | **Product Owner** | University ICT Lead |
-| **Delivery Roles** | BA, Power Platform Developer, QA, End-User Rep |
+| **Delivery Roles** | Business Analyst, Power Platform Developer, QA, End-User Representative |
 | **Environments** | DEV / TEST / PROD (Power Platform Environments) |
 | **Repository** | [Admira-Autonomous-Agent on GitHub](https://github.com/okpunosolomon/Admira-Autonomous-Agent) |
 
 ---
 
-## 🗺️ Agile Kanban Overview  
+## 🗺️ Azure DevOps Kanban Overview  
 
-The Azure DevOps board visualised sprint activity across **Backlog**, **In Progress**, **Testing**, **Done**, and **Bugs** maintaining complete traceability from user story to deployment.  
+The **Azure DevOps Board** tracked all work items from backlog creation to bug resolution, maintaining full visibility and control of sprint progress.  
 
-![Azure DevOps Kanban Board](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/dbd3bb42-989b-4cfb-978d-9086c65785f5.png?raw=true)
+![Azure DevOps Kanban Board](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/ef6c4191-c174-476b-b6d6-08c00aab0d09.png?raw=true)  
+*Figure 1: Admira project Kanban view showing Backlog → In Progress → Testing → Bugs.*
 
----
-
-## 🗂️ Sprint 1: Foundation & Environment Setup (Weeks 1–2)  
-
-**Focus:** Power Platform environment configuration, data schema creation, and topic architecture design.  
-
-| Epic | Feature | Description | Acceptance Criteria | Status |
-|------|----------|--------------|---------------------|--------|
-| **E1** | Environment Setup | Configure DEV / TEST / PROD environments | Environments isolated and linked to GitHub repo | ✅ |
-| **E2** | SharePoint Schema | Create lists for Tuition, Hostel, Results, Admissions | CRUD operations verified | ✅ |
-| **E3** | Copilot Architecture | Design conversation flow and topic tree | Core intents and handoff logic approved | ✅ |
-| **E4** | Security Model | Define access roles (Student, Admin, Support) | Azure AD roles validated | ✅ |
-
-**Key Tasks**
-- Setup solution structure in Power Platform Admin Center  
-- Create and relate SharePoint lists for each topic area  
-- Establish security groups and DLP policies  
-- Document topic dependencies and escalation routes  
-
-**Resolved Bugs**
-- *B-01:* SharePoint connector timeout → Adjusted connection reference  
-- *B-02:* Topic trigger conflict between Tuition and Hostel → Corrected expression match logic  
+This board ensured traceability between epics, user stories, and deployment milestones.
 
 ---
 
-## 🚀 Sprint 2: Core Functionality & Automation (Weeks 3–4)  
+## 🗂️ Sprint 1 – Foundation & Environment Setup  
 
-**Focus:** Implement Power Automate flows, integrate adaptive notifications, and enable full conversational coverage.  
+**Focus:** Environment configuration, schema creation, and chatbot architecture setup.  
 
 | Epic | Feature | Description | Acceptance Criteria | Status |
 |------|----------|--------------|---------------------|--------|
-| **E5** | Tuition Fee Breakdown | Retrieve tuition data by faculty and level | Fee details displayed accurately | ✅ |
-| **E6** | Hostel Booking Workflow | Automate request creation and approval | Flow updates SharePoint and Teams | ✅ |
-| **E6** | Adaptive Notifications | Send alerts via Teams cards | Cards display approval buttons and context | ✅ |
-| **E7** | Escalation Flow | Route unresolved chats to human support | Escalation triggers within SLA | ✅ |
-| **E8** | Result & Admission Topics | Query academic and admission records | Correct data returned with timestamp | ✅ |
+| **E1** | Environment Setup | Create DEV, TEST, and PROD Power Platform environments | Configured and linked to GitHub | ✅ |
+| **E2** | SharePoint Schema | Define data structure for Tuition, Hostel, Results, and Admissions | Lists tested for CRUD operations | ✅ |
+| **E3** | Copilot Architecture | Build conversation flow and topic logic | Core intents deployed successfully | ✅ |
+| **E4** | Security Model | Implement Azure AD roles (Student, Admin, Support) | Access validated | ✅ |
 
-**Key Tasks**
-- Develop Power Automate flows for tuition, hostel, and admission modules  
-- Configure JSON payloads for adaptive cards  
-- Conduct integration testing with Copilot Studio triggers  
-- Implement retry and concurrency controls  
-
-**Resolved Bugs**
-- *B-03:* Duplicate approval flow instances → Added parallel branch control  
-- *B-04:* Notification not delivered in Teams mobile → Adjusted connector version  
-- *B-05:* Hostel approval delays → Reduced loop interval  
+**Key Deliverables**
+- Power Platform environment structure  
+- SharePoint data model and relationships  
+- Conversation topic maps and user flow diagrams  
+- Security and DLP governance policies  
 
 ---
 
-## 📊 Sprint 3: Testing, Reporting & Go-Live (Weeks 5–6)  
+## 🚀 Sprint 2 – Core Functionality & Automation  
 
-**Focus:** Full UAT, system refinement, Power BI reporting integration, and production deployment.  
+**Focus:** Integrate chatbot triggers with Power Automate workflows and Teams-based adaptive notifications.  
 
 | Epic | Feature | Description | Acceptance Criteria | Status |
 |------|----------|--------------|---------------------|--------|
-| **E9** | Power BI Insights | Build reporting dashboard for chatbot usage | Metrics visible for Admins | ✅ |
-| **E10** | User Acceptance Testing | Validate all topics and flows | 100% of test cases passed | ✅ |
-| **E11** | Deployment & Governance | Export managed solution to PROD | Successfully deployed | ✅ |
-| **E12** | Training & Knowledge Transfer | Deliver Teams-based training sessions | Training checklist completed | ✅ |
+| **E5** | Tuition Fee Breakdown | Retrieve and present accurate fee data by faculty and level | Verified in Copilot Studio | ✅ |
+| **E6** | Hostel Booking Workflow | Automate accommodation requests via SharePoint and Teams | Admin approval functioning | ✅ |
+| **E7** | Escalation Flow | Route unresolved inquiries to human support | Escalation logs tested | ✅ |
+| **E8** | Adaptive Notifications | Adaptive cards sent to admins for approval | Teams notifications verified | ✅ |
 
-**Key Tasks**
-- Conduct UAT with 20 pilot users  
-- Fix and retest all priority bugs  
-- Deploy managed solution (Admira_1_0_0_1.zip)  
-- Prepare operational handover and documentation  
+**Workflow Reference**  
+The following workflow illustrates end-to-end automation from student inquiry to resolution.  
+
+![Process Workflow](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/d5c67f8f-57e0-4992-beeb-32a3d3d90b5e.png?raw=true)  
+*Figure 2: Automation workflow linking Copilot Studio, Power Automate, SharePoint, and Teams.*
 
 **Resolved Bugs**
-- *B-06:* Flow history retention below policy → Adjusted to 28 days minimum  
-- *B-07:* Adaptive card JSON parsing error → Updated schema version  
+- *B-01:* SharePoint connector timeout → fixed connection reference  
+- *B-02:* Duplicate approval trigger → introduced branch control  
+- *B-03:* Teams notification not sent → updated connector  
+
+---
+
+## 📊 Sprint 3 – Testing, Reporting & Deployment  
+
+**Focus:** User acceptance testing, Power BI reporting integration, and managed solution deployment.  
+
+| Epic | Feature | Description | Acceptance Criteria | Status |
+|------|----------|--------------|---------------------|--------|
+| **E9** | Power BI Insights | Build chatbot performance dashboard | Real-time metrics validated | ✅ |
+| **E10** | User Acceptance Testing | Validate all conversational topics | All test cases passed | ✅ |
+| **E11** | Deployment & Governance | Migrate solution to PROD | Version Admira_1_0_0_1 deployed | ✅ |
+| **E12** | Training & Knowledge Transfer | Deliver admin and student workshops | 100% attendance and sign-off | ✅ |
 
 ---
 
@@ -111,44 +98,56 @@ The Azure DevOps board visualised sprint activity across **Backlog**, **In Progr
 
 | Category | Count | Notes |
 |-----------|--------|-------|
-| **Epics** | 12 | Across full solution lifecycle |
-| **Features** | 22 | Delivered through three sprints |
+| **Epics** | 12 | Across the solution lifecycle |
+| **Features** | 22 | Delivered over three sprints |
 | **User Stories** | 35 | Focused on usability and integration |
-| **Tasks** | 45 | Tracked in Azure DevOps |
-| **Bugs** | 7 | All resolved prior to release |
-
----
-
-## 🏁 Deliverables by Sprint  
-
-| Sprint | Focus | Key Deliverables | Status |
-|---------|--------|------------------|--------|
-| **Sprint 1** | Environment & Setup | Power Platform envs, SharePoint schema, topic map | ✅ Completed |
-| **Sprint 2** | Core Automation | Tuition, hostel, admission flows + Teams cards | ✅ Completed |
-| **Sprint 3** | Testing & Deployment | UAT, dashboards, production go-live | ✅ Completed |
+| **Tasks** | 45 | Managed through Azure DevOps |
+| **Bugs** | 7 | All resolved before go-live |
 
 ---
 
 ## 💼 Business Value Delivered  
 
-- **Response time reduced:** 48 hrs → under 2 minutes  
-- **Automation coverage:** 85 % of routine queries handled autonomously  
-- **Admin workload:** Reduced by 80 % through digital workflows  
-- **Auditability:** All conversations and approvals logged in SharePoint & Teams  
-- **User satisfaction:** 95 % positive feedback during UAT  
+- **Response time reduced:** 48 hrs → <2 mins  
+- **Admin workload:** Reduced by 80% via automation  
+- **Data accuracy:** 100% due to SharePoint schema integration  
+- **User satisfaction:** 95% positive feedback in UAT  
+- **Governance:** Centralized audit logging and DLP compliance  
 
 ---
 
 ## ⚙️ Governance & DevOps Alignment  
 
-| Practice | Description |
-|-----------|-------------|
-| **Version Control** | All Power Platform solutions managed through GitHub releases |
-| **CI/CD Pipeline** | Automated export/import pipelines for DEV → TEST → PROD |
-| **DLP & Security** | Data Loss Prevention policies enforced via Admin Center |
-| **Testing** | Manual + automated flow testing in Azure DevOps Test Plans |
-| **Monitoring** | Flow analytics, error logging, and Power Platform Center of Excellence dashboards |
-| **Documentation** | BRD, UAT, User Guide stored under `/Documentation/` |
+| Area | Practice |
+|------|-----------|
+| **Version Control** | Managed GitHub releases for each build |
+| **CI/CD Pipeline** | Automated DEV → TEST → PROD deployment |
+| **DLP & Security** | Enforced via Power Platform Admin Center |
+| **Testing** | Manual + automated DevOps Test Plans |
+| **Monitoring** | Power Platform CoE analytics & error tracking |
+| **Documentation** | BRD, UAT, and User Guide maintained under `/Documentation/` |
+
+---
+
+## 🧭 Lessons Learned  
+
+| Observation | Resolution |
+|--------------|-------------|
+| Flow trigger overlap | Introduced controller orchestration flow |
+| Manual testing fatigue | Added automated test scripts |
+| Delayed admin actions | Teams notifications improved response rate |
+| Missing user feedback | Designed post-chat satisfaction survey |
+
+---
+
+## 🚀 Scalability Roadmap  
+
+| Phase | Enhancement | Objective |
+|--------|--------------|------------|
+| **Phase 2** | Power BI Analytics | Real-time service tracking |
+| **Phase 3** | Multilingual Support | Expand to Yoruba, Hausa, Igbo |
+| **Phase 4** | Student ERP Integration | Dataverse sync with admission records |
+| **Phase 5** | AI Builder Extension | Add intent prediction and sentiment detection |
 
 ---
 
@@ -160,43 +159,18 @@ The Azure DevOps board visualised sprint activity across **Backlog**, **In Progr
 ┃  ┣ BRD-UAT-UserGuide.md
 ┃  ┗ AzureDevOps_DeliveryReport.md ← (this file)
 ┣ 📁 Visuals/
-┃  ┣ dbd3bb42-989b-4cfb-978d-9086c65785f5.png
-┃  ┣ Accomodation Booking Cloud Automate Flow.png
-┃  ┗ TEAMS NOTIFICATION.png
+┃  ┣ Azure DevOps Overview Board.png
+┃  ┣ Process Workflow.png
+┃  ┣ TEAMS NOTIFICATION.png
+┃  ┗ Accomodation Booking Cloud Automate Flow.png
 ┣ 📁 Solution Zip File/
 ┃  ┗ Admira_1_0_0_1.zip
-┣ 📁 Test Chat/
-┃  ┣ Tuition Fee Breakdown.docx
-┃  ┣ Hostel & Result Topics.docx
-┃  ┗ Admission Status.docx
 ┗ README.md
 ````
 
 ---
 
-## 🧭 Lessons Learned
-
-| Observation                         | Action                                                |
-| ----------------------------------- | ----------------------------------------------------- |
-| Overlapping Power Automate triggers | Consolidated topic triggers under one controller flow |
-| Excessive manual testing effort     | Introduced reusable test scripts in DevOps            |
-| Delayed approvals from admins       | Implemented Teams adaptive notifications              |
-| Lack of feedback tracking           | Added post-interaction rating survey (future phase)   |
-
----
-
-## 🚀 Scalability Roadmap
-
-| Phase       | Enhancement             | Objective                                     |
-| ----------- | ----------------------- | --------------------------------------------- |
-| **Phase 2** | Power BI Dashboard      | Provide live analytics on chatbot performance |
-| **Phase 3** | Multilingual Support    | Extend to Yoruba, Hausa, and Igbo             |
-| **Phase 4** | Student ERP Integration | Sync Dataverse with admission & records data  |
-| **Phase 5** | AI Builder Insights     | Add predictive trend and sentiment analytics  |
-
----
-
-## 📞 Contact
+## 👨🏽‍💼 Contact
 
 **Consultant / Scrum Master:** **Solomon Okpuno**
 📧 [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)
@@ -205,6 +179,5 @@ The Azure DevOps board visualised sprint activity across **Backlog**, **In Progr
 
 ---
 
-> *This Agile delivery report provides transparent evidence of end-to-end project execution under an Azure DevOps framework, proving how Power Platform and AI automation can transform student engagement into a measurable, auditable, and continuously improving service model.*
+> *This DevOps delivery summary demonstrates how AI-driven automation, built through Power Platform, can redefine student support operations in higher education — uniting speed, governance, and intelligent workflow management.*
 
-```
