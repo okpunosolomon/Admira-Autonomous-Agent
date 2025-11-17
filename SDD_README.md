@@ -85,10 +85,10 @@ This closed-loop ensures every interaction is logged, auditable, and consistent.
 ---
 
 ### 5.2 SharePoint / Excel Schema  
-![SharePoint and Excel Data Schema](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/1ad4fad1-50a7-4123-b7b6-3b450b93bd1d.png?raw=true)
-*Figure 2: Data schema illustrating structured storage for student hostel applications and tuition records.*
+![Excel and SharePoint Schema – Before and After Submission](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/BEFORE%20HOSTEL%20BOOKING%20WAS%20SUBMITTED%20.png?raw=true)
+![Excel Schema – Updated After Submission](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/AFTER%20HOSTEL%20BOOKING%20WAS%20SUBMITED.png?raw=true)
+*Figure 2: Data schema before and after hostel booking submission, showing how Power Automate writes structured records directly to Excel / SharePoint.*
 
-*Figure 2: Hostel_Applications schema showing key data columns.*
 
 | Column Name | Type | Description |
 |--------------|------|-------------|
@@ -172,16 +172,7 @@ This design improves traceability and staff responsiveness.
 
 ---
 
-## 9. Visual Summary — System Interconnection  
-
-![System Interconnection](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/860c8b9c-f0f8-4644-b24a-297aeb2d8595.png?raw=true)  
-*Figure 5: End-to-end system interconnection between Copilot Studio, Power Automate, SharePoint, and Teams.*
-
-This diagram illustrates how data and automation flow seamlessly across the platform, forming a unified digital ecosystem.
-
----
-
-## 10. Summary  
+## 9. Summary  
 
 The **Admira Autonomous Agent** represents a scalable model for intelligent service automation in higher education.  
 It unifies conversational AI, process automation, and governance into a single Power Platform solution—reducing manual workload, improving service speed, and strengthening institutional data integrity.
