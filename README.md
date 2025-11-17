@@ -12,7 +12,7 @@
 
 **Admira Autonomous Agent** is an enterprise-grade conversational AI solution developed for **Admiral University Nigeria** to automate and streamline student interactions using Microsoft’s **Power Platform** ecosystem.  
 
-It serves as a 24/7 **AI-powered student assistant** capable of handling tuition inquiries, hostel booking, result checking, admission guidance, and real-time notifications. The project demonstrates how **Copilot Studio**, **Power Automate**, and **Microsoft Teams** can work together to replace repetitive manual operations with intelligent automation — enabling faster service, stronger governance, and improved student experience.
+It serves as a 24/7 **AI-powered student assistant** capable of handling tuition inquiries, hostel booking, result checking, admission guidance, and real-time notifications. The project demonstrates how **Copilot Studio**, **Power Automate**, and **Microsoft Teams** can work together to replace repetitive manual operations with intelligent automation enabling faster service, stronger governance, and improved student experience.
 
 Admira is not just a chatbot, it’s a scalable **digital operations agent** built with enterprise architecture and data-driven governance in mind.
 
@@ -194,7 +194,7 @@ Admira combines three intelligent conversation layers that power its natural flo
 ### 💬 Teams Notification Example
 
 Admira’s Teams integration enables **real-time communication** between automation and human oversight.
-**Adaptive Cards** deliver actionable updates to both students and administrators — including hostel approvals, tuition inquiries, or result status changes.
+**Adaptive Cards** deliver actionable updates to both students and administrators including; hostel approvals, tuition inquiries, or result status changes.
 
 ![Teams Notification](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/TEAMS%20NOTIFICATION.png?raw=true)
 
@@ -231,5 +231,5 @@ Admira’s Teams integration enables **real-time communication** between automat
 The **Admira Autonomous Agent** showcases how Microsoft Power Platform can drive **AI-enabled digital transformation** in higher education.
 By connecting people, data, and automation, Admira demonstrates how institutions can modernize support delivery, strengthen governance, and achieve operational excellence.
 
-> **Admira represents the next generation of student engagement — automated, scalable, and human-centered.**
+> **Admira represents the next generation of student engagement, automated, scalable, and human-centered.**
 
