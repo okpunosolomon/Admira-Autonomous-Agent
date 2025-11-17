@@ -180,7 +180,7 @@ This feature ensures real-time visibility and faster response cycles.
 
 ![System Interconnection Overview](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/System%20Interconnection%20Overview.png?raw=true)
 
-*Figure 5: End-to-end system connectivity — linking Copilot Studio, Power Automate, SharePoint, and Teams in a unified workflow.*
+*Figure 5: End-to-end system connectivity - linking Copilot Studio, Power Automate, SharePoint, and Teams in a unified workflow.*
 
 This diagram illustrates how each component interacts in real time:
 - **Copilot Studio** handles user dialogue and triggers workflows  
