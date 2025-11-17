@@ -213,6 +213,14 @@ Admira’s Teams integration enables **real-time communication** between automat
 
 ---
 
+## 🧱 Summary
+
+The **Admira Autonomous Agent** showcases how Microsoft Power Platform can drive **AI-enabled digital transformation** in higher education.
+By connecting people, data, and automation, Admira demonstrates how institutions can modernize support delivery, strengthen governance, and achieve operational excellence.
+
+> **Admira represents the next generation of student engagement, automated, scalable, and human-centered.**
+
+---
 ## 👨🏽‍💼 Consultant
 
 **Solomon Okpuno**
@@ -226,11 +234,3 @@ Admira’s Teams integration enables **real-time communication** between automat
 [GitHub](https://github.com/okpunosolomon)
 
 ---
-
-## 🧱 Summary
-
-The **Admira Autonomous Agent** showcases how Microsoft Power Platform can drive **AI-enabled digital transformation** in higher education.
-By connecting people, data, and automation, Admira demonstrates how institutions can modernize support delivery, strengthen governance, and achieve operational excellence.
-
-> **Admira represents the next generation of student engagement, automated, scalable, and human-centered.**
-
