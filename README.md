@@ -1,4 +1,3 @@
-````markdown
 # 🤖 Admira Autonomous Agent — Admiral University Nigeria  
 *AI-Powered Student Engagement System Built on Microsoft Power Platform*
 
