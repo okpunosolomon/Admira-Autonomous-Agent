@@ -6,7 +6,7 @@
 ## 🧠 Executive Overview  
 
 The **Admira Autonomous Agent** is an enterprise-grade, AI-powered student engagement system built on the **Microsoft Power Platform**.  
-It streamlines student services,**tuition fee inquiries**, **hostel booking**, **result checking**, and **admission status verification** into a single, intelligent conversational interface powered by **Copilot Studio** and **Power Automate**.  
+It streamlines student services, **tuition fee inquiries**, **hostel booking**, **result checking**, and **admission status verification** into a single, intelligent conversational interface powered by **Copilot Studio** and **Power Automate**.  
 
 **Objective:**  
 Deliver a secure, scalable, and fully governed automation framework that enhances responsiveness, transparency, and student experience across Admiral University’s academic operations.
