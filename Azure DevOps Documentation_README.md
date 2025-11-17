@@ -31,7 +31,8 @@ Deliver a secure, scalable, and fully governed automation framework that enhance
 
 The **Azure DevOps Board** tracked all work items from backlog creation to bug resolution, maintaining full visibility and control of sprint progress.  
 
-![Azure DevOps Kanban Board](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/ef6c4191-c174-476b-b6d6-08c00aab0d09.png?raw=true)  
+![Azure DevOps Overview Board](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/b44c6006-a29a-4f69-85de-a4a0070867e2.png?raw=true)
+
 *Figure 1: Admira project Kanban view showing Backlog → In Progress → Testing → Bugs.*
 
 This board ensured traceability between epics, user stories, and deployment milestones.
