@@ -1,4 +1,5 @@
-# 🤖 Admira Autonomous Agent — Admiral University Nigeria  
+# 🤖 Admira Autonomous Agent 
+**Admiral University Nigeria**  
 *AI-Powered Student Engagement System Built on Microsoft Power Platform*
 
 ---
@@ -13,7 +14,7 @@
 
 It serves as a 24/7 **AI-powered student assistant** capable of handling tuition inquiries, hostel booking, result checking, admission guidance, and real-time notifications. The project demonstrates how **Copilot Studio**, **Power Automate**, and **Microsoft Teams** can work together to replace repetitive manual operations with intelligent automation — enabling faster service, stronger governance, and improved student experience.
 
-Admira is not just a chatbot — it’s a scalable **digital operations agent** built with enterprise architecture and data-driven governance in mind.
+Admira is not just a chatbot, it’s a scalable **digital operations agent** built with enterprise architecture and data-driven governance in mind.
 
 ---
 
@@ -121,7 +122,7 @@ This logic ensures each student receives an accurate, contextual response.
 | Student satisfaction rate | 65%           | 95%                     |
 | Operational efficiency    | Limited       | Scalable and continuous |
 
-Admira evolved from a chatbot into a **service automation hub**—enabling measurable process improvement across multiple academic departments.
+Admira evolved from a chatbot into a **service automation hub**, enabling measurable process improvement across multiple academic departments.
 
 ---
 
@@ -216,8 +217,12 @@ Admira’s Teams integration enables **real-time communication** between automat
 
 **Solomon Okpuno**
 *Business & Power Platform Consultant*
+
 📧 [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)
-🌐 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312) | [GitHub](https://github.com/okpunosolomon)
+
+🌐 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312)
+
+[GitHub](https://github.com/okpunosolomon)
 
 ---
 
