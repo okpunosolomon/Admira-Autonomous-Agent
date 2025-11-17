@@ -1,7 +1,8 @@
 # 🧭 Solution Design Document (SDD)  
 **Project:** Admira Autonomous Agent  
 **Client:** Admiral University Nigeria  
-**Consultant:** Solomon Okpuno – Business & Power Platform Consultant  
+**Consultant:** Solomon Okpuno 
+Business & Power Platform Consultant  
 
 ---
 
@@ -9,9 +10,9 @@
 
 The **Admira Autonomous Agent** is an AI-powered digital engagement system developed for **Admiral University Nigeria** to modernize student services through Microsoft’s **Power Platform**.  
 
-Operating 24/7, it automates core academic and administrative processes such as **tuition inquiries**, **hostel booking**, **result checking**, and **admission status updates** — all delivered via a conversational interface powered by **Copilot Studio** and **Power Automate**.  
+Operating 24/7, it automates core academic and administrative processes such as **tuition inquiries**, **hostel booking**, **result checking**, and **admission status updates**, all delivered via a conversational interface powered by **Copilot Studio** and **Power Automate**.  
 
-This initiative eliminates manual delays, boosts transparency, and enforces enterprise-grade governance within the university’s Microsoft 365 ecosystem. It’s not just a chatbot — it’s an intelligent, process-driven automation hub.
+This initiative eliminates manual delays, boosts transparency, and enforces enterprise-grade governance within the university’s Microsoft 365 ecosystem. It is not just a chatbot but an intelligent, process-driven automation hub.
 
 ---
 
@@ -194,7 +195,7 @@ Together, they form a fully governed automation ecosystem.
 ## 10. Summary  
 
 The **Admira Autonomous Agent** sets a benchmark for **intelligent automation in higher education**, blending conversational AI with enterprise governance.  
-It unifies data, workflows, and communication into a single Power Platform solution — delivering faster response times, better accountability, and measurable efficiency gains.
+It unifies data, workflows, and communication into a single Power Platform solution delivering faster response times, better accountability, and measurable efficiency gains.
 
 > *Admira is more than a chatbot; it’s a digital operations partner designed to scale with the institution.*
 
