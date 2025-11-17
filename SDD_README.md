@@ -173,6 +173,9 @@ This design improves traceability and staff responsiveness.
 ---
 
 ## 9. Summary  
+![System Interconnection Diagram](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/8270b9e0-ab38-470b-9d95-13bb1ae8c524.png?raw=true)
+*Figure 5: Full system interconnection showing Copilot Studio (chat layer), Power Automate (workflow layer), SharePoint / Excel (data layer), and Teams (notification layer).*
+
 
 The **Admira Autonomous Agent** represents a scalable model for intelligent service automation in higher education.  
 It unifies conversational AI, process automation, and governance into a single Power Platform solution—reducing manual workload, improving service speed, and strengthening institutional data integrity.
