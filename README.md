@@ -1,58 +1,63 @@
-# 🤖 Admira Autonomous Agent – Admiral University Nigeria  
-*AI-Powered Student Support Chatbot Built on Microsoft Power Platform*
+````markdown
+# 🤖 Admira Autonomous Agent — Admiral University Nigeria  
+*AI-Powered Student Engagement System Built on Microsoft Power Platform*
 
 ---
 
-## ![Banner](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/860c8b9c-f0f8-4644-b24a-297aeb2d8595.png?raw=true)
+![Banner](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Project%20&%20Purpose.png?raw=true)
 
 ---
 
 ## 🏫 Executive Summary  
 
-The **Admira Autonomous Agent** is an AI-driven Copilot Studio chatbot designed for **Admiral University Nigeria** to automate and enhance student engagement.  
-It integrates conversational intelligence with Microsoft’s **Power Platform**, allowing students to access tuition details, check semester results, apply for hostel accommodation, and connect with support — all through a unified, intelligent interface.
+**Admira Autonomous Agent** is an enterprise-grade conversational AI solution developed for **Admiral University Nigeria** to automate and streamline student interactions using Microsoft’s **Power Platform** ecosystem.  
 
-This repository documents the **end-to-end development, automation, and governance framework** of the Admira solution — a flagship implementation of **Power Automate, SharePoint, and Microsoft Teams integration** within higher education.
+It serves as a 24/7 **AI-powered student assistant** capable of handling tuition inquiries, hostel booking, result checking, admission guidance, and real-time notifications. The project demonstrates how **Copilot Studio**, **Power Automate**, and **Microsoft Teams** can work together to replace repetitive manual operations with intelligent automation — enabling faster service, stronger governance, and improved student experience.
+
+Admira is not just a chatbot — it’s a scalable **digital operations agent** built with enterprise architecture and data-driven governance in mind.
 
 ---
 
 ## 💡 Business Context  
 
-Universities face operational inefficiencies due to fragmented communication channels, delayed responses, and repetitive manual queries.  
-**Admiral University** sought to modernize its service delivery through a **centralized, conversational support system** capable of handling:  
+Modern universities face operational strain from rising student populations, slow manual responses, and decentralized information systems.  
 
-- High-volume student inquiries  
-- Repetitive administrative tasks  
-- Real-time notifications and escalation to human agents  
+Admiral University required a solution that could:  
+- Deliver **24/7 digital support** for students.  
+- Reduce **administrative workload** through process automation.  
+- Integrate seamlessly with **existing Microsoft 365 infrastructure**.  
+- Provide measurable **service transparency and analytics**.  
 
-The Admira Agent addresses these challenges with a **low-code intelligent automation ecosystem**, enabling continuous engagement and service efficiency.
+The Admira Agent was designed as a **smart automation layer**, connecting students, academic departments, and administrators through a single intelligent interface.
 
 ---
 
 ## 🧩 Solution Architecture  
 
-![Architecture](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/89980a7b-7017-495f-8083-cf538fb7d7b5.png?raw=true)
+![Solution Architecture](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Systematic%20Process%20to%20AI%20Build.png?raw=true)
 
 | Layer | Component | Function |
 |-------|------------|-----------|
-| **Presentation** | Microsoft Copilot Studio | Conversational AI interface handling student interactions |
-| **Automation** | Power Automate | Executes approval workflows, triggers notifications, and updates SharePoint lists |
-| **Data Storage** | SharePoint Lists / Dataverse | Manages structured data for tuition, hostel, and student records |
-| **Collaboration** | Microsoft Teams | Sends adaptive cards for admin and user notifications |
-| **Integration** | JSON, Adaptive Cards, PowerFx | Handles data exchange between Copilot Studio and backend systems |
+| **Conversational AI** | Microsoft Copilot Studio | Handles all student queries via structured topics and intents |
+| **Automation Layer** | Power Automate Cloud Flows | Executes backend processes like form submissions, approvals, and notifications |
+| **Data Layer** | SharePoint Lists / Dataverse | Stores structured data on fees, hostels, and user submissions |
+| **Collaboration Layer** | Microsoft Teams | Sends adaptive card notifications to users and administrators |
+| **Governance Layer** | Power Platform Admin Center | Ensures compliance, environment separation, and audit logging |
+
+The architecture allows **real-time data flow** between Power Platform components while maintaining centralized governance.
 
 ---
 
 ## 🚀 Features & Value Delivered  
 
-| Feature | Description | Business Value |
-|----------|--------------|----------------|
-| 🎓 **Tuition Fee Breakdown** | Retrieves real-time fee details by faculty and level | Transparency for students and reduced staff load |
-| 🏘️ **Hostel Application** | Submits and tracks accommodation requests | Automated approval workflow and allocation logs |
-| 🧾 **Semester Result Check** | Provides guided access to student results | Reduced support dependency and 24/7 availability |
-| 💬 **Teams Notifications** | Adaptive cards for both admin and user | Instant alerts and audit-friendly tracking |
-| 🔁 **Escalation Pathway** | Transfers unresolved chats to a human agent | Seamless transition ensuring user satisfaction |
-| 📊 **Governance Dashboard** *(Planned)* | Integrates Power BI for usage and ticket analysis | Data-driven decisions and performance tracking |
+| Feature | Description | Business Impact |
+|----------|--------------|-----------------|
+| 🎓 **Tuition Fee Breakdown** | Retrieves faculty- and level-specific tuition details | Improved financial transparency and fewer fee-related queries |
+| 🏘️ **Hostel Application & Allocation** | Allows students to apply and track hostel requests | Automated approval workflow reduces admin response time |
+| 🧾 **Semester Result Check** | Guides students in accessing academic results | Reduced dependency on physical offices |
+| 💬 **Teams Notifications** | Adaptive cards inform users and admins instantly | Real-time, auditable communication |
+| 🔄 **Escalation Pathway** | Transfers unresolved chats to human support | Balanced automation and empathy |
+| 📊 **Analytics Dashboard (Planned)** | Power BI integration for service metrics | Enables leadership to measure engagement and performance |
 
 ---
 
@@ -60,31 +65,35 @@ The Admira Agent addresses these challenges with a **low-code intelligent automa
 
 | Category | Tools / Components |
 |-----------|--------------------|
-| **AI & Chatbot Framework** | Microsoft Copilot Studio (Power Virtual Agents) |
-| **Automation Engine** | Power Automate Cloud Flows |
-| **Data Layer** | Microsoft SharePoint Online, Dataverse |
-| **Collaboration** | Microsoft Teams (Adaptive Card Integration) |
-| **Governance** | Power Platform Admin Center, Environment Variables |
-| **Security & Access** | Azure AD Role-Based Permissions |
-| **Testing Tools** | Copilot Studio Test Chat, Flow Run History |
-| **Development Environment** | ADMIRA Solution v1.0.0.1 (.zip) |
+| **Chatbot Engine** | Microsoft Copilot Studio |
+| **Workflow Automation** | Power Automate |
+| **Data Management** | Microsoft SharePoint Lists / Dataverse |
+| **Communication** | Microsoft Teams (Adaptive Cards) |
+| **Security & Access Control** | Azure AD Role-Based Permissions |
+| **Testing & Debugging** | Copilot Studio Test Chat, Flow Run History |
+| **Deployment Package** | Admira_1_0_0_1 Managed Solution (.zip) |
 
 ---
 
 ## 🔄 Automation Logic Overview  
 
-### Example 1: Hostel Booking Workflow  
-![Hostel Booking Flow](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Accomodation%20Booking%20Cloud%20Automate%20Flow.png?raw=true)
+### Example 1: Hostel Booking Flow  
 
-**Logic Summary:**
-1. User submits hostel request via chatbot.  
-2. Power Automate flow creates SharePoint record.  
-3. Adaptive Card notifies admin in Teams for approval.  
-4. Student receives confirmation message and record updates.
+![Hostel Flow](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Accomodation%20Booking%20Cloud%20Automate%20Flow.png?raw=true)
+
+**Flow Summary:**  
+1. Student initiates hostel request through the chatbot.  
+2. Power Automate creates a record in SharePoint and triggers approval.  
+3. Administrator receives a Teams adaptive card for review.  
+4. Upon approval/rejection, both admin and student receive instant updates.  
+
+✅ *This reduces manual data entry and improves decision turnaround time.*
 
 ---
 
 ### Example 2: Tuition Fee Breakdown  
+
+The Tuition topic retrieves relevant fee information from SharePoint using PowerFx conditions embedded in Copilot Studio.  
 
 ```json
 {
@@ -92,27 +101,28 @@ The Admira Agent addresses these challenges with a **low-code intelligent automa
   "level": "400",
   "tuition": "₦450,000",
   "additional_fees": {
-    "Library": "₦15,000",
-    "ICT": "₦10,000"
+    "ICT": "₦10,000",
+    "Library": "₦15,000"
   },
   "total": "₦475,000"
 }
 ````
 
-The chatbot retrieves data dynamically based on program and level using PowerFx expressions mapped to SharePoint data.
+This logic ensures each student receives an accurate, contextual response.
 
 ---
 
-## 🧠 Implementation Results
+## 🧠 Implementation Highlights
 
-| Metric                | Before Admira | After Admira   |
-| --------------------- | ------------- | -------------- |
-| Average response time | 48 hrs        | < 2 minutes    |
-| Query resolution rate | 42%           | 92%            |
-| Student satisfaction  | 65%           | 95%            |
-| Manual intervention   | Frequent      | Reduced by 80% |
+| KPI                       | Before Admira | After Admira            |
+| ------------------------- | ------------- | ----------------------- |
+| Average response time     | 48 hours      | < 2 minutes             |
+| Student support workload  | High          | Reduced by 80%          |
+| Escalation tracking       | Manual        | Fully automated         |
+| Student satisfaction rate | 65%           | 95%                     |
+| Operational efficiency    | Limited       | Scalable and continuous |
 
-Admira redefined Admiral University’s digital service experience, achieving **scalable, low-code automation with human oversight**.
+Admira evolved from a chatbot into a **service automation hub**—enabling measurable process improvement across multiple academic departments.
 
 ---
 
@@ -125,32 +135,74 @@ Admira-Autonomous-Agent/
 │   └── Admira_1_0_0_1.zip
 │
 ├── Test Chat/
-│   ├── Admission Status (Topic).docx
 │   ├── TUITION FEE BREAKDOWN (Topic).docx
 │   ├── SEMESTER RESULT CHECK & HOSTEL BOOKING TEST CHAT.docx
+│   ├── Admission Status (Topic).docx
 │
 ├── Visuals/
 │   ├── Copilot studio Interface.png
-│   ├── Admira Custom Topics.png
+│   ├── Admira System Topics.png
 │   ├── Admira Knowledge Base.png
-│   ├── Systematic Process to AI Build.png
+│   ├── Accomodation Booking Cloud Automate Flow.png
 │   ├── TEAMS NOTIFICATION.png
-│   ├── Project & Purpose.png
-│   └── ... (support visuals for documentation)
+│   ├── Systematic Process to AI Build.png
+│   └── Project & Purpose.png
 │
 └── README.md
 ```
 
 ---
 
-## 🧭 Next Steps & Scalability
+## 📎 Additional Visuals
 
-| Phase       | Enhancement            | Description                                                          |
-| ----------- | ---------------------- | -------------------------------------------------------------------- |
-| **Phase 2** | Power BI Integration   | Develop analytics dashboard for ticket and response metrics          |
-| **Phase 3** | Multi-language Support | Enable English, Hausa, Yoruba, and Igbo conversation options         |
-| **Phase 4** | ERP / SIS Integration  | Connect to student information system for real-time academic records |
-| **Phase 5** | AI Builder Upgrade     | Integrate form processing and intent prediction for smarter routing  |
+The visuals below provide insight into Admira’s internal architecture, design interface, and notification logic.
+
+---
+
+### 🧠 Copilot Studio Interface
+
+The **Copilot Studio Interface** is the control center of Admira.
+It manages **conversational topics**, **knowledge sources**, and **integration triggers** that connect to Power Automate and Teams.
+Each topic represents a business scenario such as hostel requests, result checks, or tuition inquiries.
+
+![Copilot Studio Interface](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Copilot%20studio%20Interface.png?raw=true)
+
+---
+
+### 🧩 System Topics & Knowledge Base
+
+Admira combines **System Topics** for core intents (greetings, handoffs, feedback) with **Custom Topics** for institutional operations.
+The **Knowledge Base** consolidates data from Admiral University’s official information sources, ensuring factual, policy-aligned responses.
+
+#### System Topics
+
+![System Topics](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Admira%20System%20Topics.png?raw=true)
+
+#### Knowledge Base
+
+![Knowledge Base](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Admira%20Knowledge%20Base.png?raw=true)
+
+---
+
+### 💬 Teams Notification Example
+
+Admira’s Teams integration enables **bi-directional communication** between automation and staff.
+Notifications are powered by **Adaptive Cards**, delivering contextual alerts directly to Teams — such as hostel approvals or feedback summaries.
+
+![Teams Notification](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/TEAMS%20NOTIFICATION.png?raw=true)
+
+*These cards improve responsiveness, track interactions, and maintain a documented audit trail within the Microsoft 365 environment.*
+
+---
+
+## 🧭 Scalability & Roadmap
+
+| Phase       | Enhancement             | Description                                                      |
+| ----------- | ----------------------- | ---------------------------------------------------------------- |
+| **Phase 2** | Power BI Insights       | Build analytics dashboards to monitor queries and SLA compliance |
+| **Phase 3** | Multilingual Capability | Add Yoruba, Hausa, and Igbo conversation models                  |
+| **Phase 4** | ERP Integration         | Connect Dataverse to student information systems                 |
+| **Phase 5** | AI Builder Extension    | Introduce intent prediction and adaptive sentiment detection     |
 
 ---
 
@@ -158,31 +210,17 @@ Admira-Autonomous-Agent/
 
 **Solomon Okpuno**
 *Business & Power Platform Consultant*
-[LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312) | [GitHub](https://github.com/okpunosolomon)
+📧 [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)
+🌐 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312) | [GitHub](https://github.com/okpunosolomon)
 
 ---
 
-## 📎 Additional Visuals
+## 🧱 Summary
 
-### Copilot Studio Interface
+The **Admira Autonomous Agent** showcases how Power Platform can operationalize **AI-driven transformation** in higher education.
+It bridges technology and human experience — providing a practical model for universities aiming to modernize support, increase transparency, and sustain scalable automation.
 
-![Copilot Studio](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Copilot%20studio%20Interface.png?raw=true)
-
-### System Topics & Knowledge Base
-
-![Topics](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Admira%20System%20Topics.png?raw=true)
-![Knowledge Base](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Admira%20Knowledge%20Base.png?raw=true)
-
-### Teams Notification Example
-
-![Teams Notification](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/TEAMS%20NOTIFICATION.png?raw=true)
-
----
-
-### 🧱 Summary
-
-The **Admira Autonomous Agent** embodies the fusion of **Power Platform innovation and intelligent automation**, proving how universities can **transform operations, reduce overhead, and deliver 24/7 digital assistance** — all with Microsoft’s low-code ecosystem.
-It stands as a model of **adaptive digital transformation in higher education**.
+> **Admira represents the future of intelligent student engagement — simple, automated, and human-aware.**
 
 ```
 ```
