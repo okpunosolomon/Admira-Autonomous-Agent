@@ -7,11 +7,11 @@
 
 ## 1. Executive Summary  
 
-The **Admira Autonomous Agent** is an enterprise chatbot and automation framework designed to streamline student engagement and administrative workflows at **Admiral University Nigeria**.  
+The **Admira Autonomous Agent** is an enterprise-grade automation and AI solution designed to modernize student engagement at **Admiral University Nigeria**.  
 
-Built entirely on **Microsoft Power Platform**, the solution leverages **Copilot Studio**, **Power Automate**, **SharePoint**, and **Microsoft Teams** to automate key university services such as **tuition fee inquiries**, **hostel booking**, **semester result access**, and **admission status updates**.  
+By integrating **Microsoft Copilot Studio**, **Power Automate**, **SharePoint**, and **Microsoft Teams**, the system transforms routine university operations—like tuition queries, hostel booking, and admission checks—into **intelligent, automated workflows**.  
 
-The project’s goal was to reduce operational friction, enhance response accuracy, and provide 24/7 accessibility while maintaining strong data governance and scalability.  
+The project’s key objective was to deliver a **24/7, scalable digital support system** that enhances service delivery, ensures governance, and creates a consistent student experience.
 
 ---
 
@@ -19,54 +19,52 @@ The project’s goal was to reduce operational friction, enhance response accura
 
 | Business Challenge | Impact | Opportunity |
 |--------------------|---------|--------------|
-| High student support volume and delayed responses | Student dissatisfaction, manual workload | Implement an AI-driven 24/7 support agent |
-| Fragmented data and processes across departments | Inefficient communication and data redundancy | Centralize data through Dataverse / SharePoint integration |
-| Lack of visibility into service metrics | Limited analytics and accountability | Deploy Power BI dashboards and adaptive notifications |
-| Resource-heavy administrative processes | Increased staff dependency | Automate common workflows with Power Automate and Teams |
+| High student query volume | Slow responses, operational delays | Introduce conversational AI for 24/7 service |
+| Manual processing of hostel and fee data | Error-prone and time-intensive | Automate workflows via Power Automate and SharePoint |
+| Lack of audit trail and visibility | Limited accountability | Implement Teams-based adaptive card notifications |
+| Fragmented data across departments | Redundant entries, misalignment | Centralize data through Dataverse/SharePoint integration |
 
 ---
 
 ## 3. Functional Overview  
 
 ### 🎓 Tuition Fee Breakdown  
-Students can request real-time fee details by faculty and level.  
-The chatbot dynamically retrieves data from SharePoint, performs calculations, and displays structured tuition components.
+Students request tuition details based on faculty and level. The chatbot retrieves live data from SharePoint, applies validation logic, and returns accurate, itemized fees.
 
 ### 🏘️ Hostel Application & Allocation  
-The system captures hostel booking requests via chatbot inputs, records data in SharePoint, and triggers approval workflows through Power Automate.  
-Admin staff receive **Teams adaptive cards** to approve or reject applications instantly.
+Students apply for accommodation directly in the chatbot. A Power Automate flow logs each application in SharePoint and sends **Teams approval cards** to administrators for instant action.
 
 ### 📊 Semester Result Check  
-Students can inquire about their semester results. Admira directs them to authenticated portals or returns available academic summaries through the knowledge base.
+Admira guides students to access semester results or provides summary feedback based on validated university records.
 
 ### 🧾 Admission Status Inquiry  
-Prospective students can verify admission updates, guided through step-by-step chatbot interactions linked to official data sources.
+Prospective students can verify admission outcomes and next steps within the same conversational interface.
 
 ---
 
 ## 4. Solution Architecture  
 
-### 4.1 Logical Architecture  
+### 4.1 Logical Overview  
 
 ![Solution Architecture](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Systematic%20Process%20to%20AI%20Build.png?raw=true)
 
 | Layer | Component | Description |
 |--------|------------|-------------|
-| **Experience Layer** | Copilot Studio | Conversational interface that manages all topics, knowledge sources, and handoff logic |
-| **Automation Layer** | Power Automate Cloud Flows | Executes logic for tuition, hostel, and result operations |
-| **Data Layer** | SharePoint Lists / Dataverse | Stores structured datasets (e.g., Fees, Hostel Applications, Admissions) |
-| **Notification Layer** | Microsoft Teams Adaptive Cards | Sends real-time approval or confirmation alerts |
-| **Governance Layer** | Power Platform Admin Center | Enforces ALM, environment separation, and compliance standards |
+| **Experience Layer** | Copilot Studio | Conversational interface for tuition, hostel, and admission topics |
+| **Automation Layer** | Power Automate Cloud Flows | Executes business logic and backend data transactions |
+| **Data Layer** | SharePoint / Dataverse | Stores structured student and operations data |
+| **Notification Layer** | Microsoft Teams (Adaptive Cards) | Real-time approvals and notifications |
+| **Governance Layer** | Power Platform Admin Center | Environment separation and compliance auditing |
 
 ---
 
 ### 4.2 Data Flow  
 
-1. Student initiates query → Copilot Studio triggers relevant topic  
-2. Topic condition routes request → Power Automate Flow  
-3. Flow retrieves/updates data → SharePoint or Dataverse  
-4. Result → Teams notification and chatbot response  
-5. Logs and approvals recorded → Dataverse audit trail  
+1. Student triggers topic in **Copilot Studio**  
+2. **Power Automate** flow receives context (e.g., “Hostel Booking”)  
+3. Flow logs request in **SharePoint List**  
+4. Admin receives **Teams Adaptive Card** for approval  
+5. Decision updates Dataverse and notifies user instantly  
 
 ---
 
@@ -74,87 +72,113 @@ Prospective students can verify admission updates, guided through step-by-step c
 
 ### 5.1 Power Automate Connectors  
 
-| Connector | Purpose |
-|------------|----------|
-| **Microsoft Dataverse** | Central data repository and audit log |
-| **SharePoint Online** | Stores tuition, hostel, and admission datasets |
-| **Office 365 Outlook** | Email notifications to students and staff |
-| **Microsoft Teams** | Adaptive card alerts for approvals |
-| **Copilot Studio Trigger** | Initiates flow based on user intent |
+| Connector | Function |
+|------------|-----------|
+| **Copilot Studio Trigger** | Captures chatbot intents and starts workflow |
+| **Microsoft SharePoint** | Stores hostel, tuition, and admission records |
+| **Office 365 Outlook** | Sends email alerts |
+| **Microsoft Teams** | Pushes adaptive approval cards |
+| **Microsoft Dataverse** | Centralized logging and analytics (future phase) |
 
 ---
 
-### 5.2 SharePoint Schema Example  
+### 5.2 SharePoint Schema (Hostel Applications)  
 
-**List:** Hostel_Applications  
-| Column Name | Data Type | Description |
-|--------------|------------|-------------|
-| Student_Name | Single line of text | Name of applicant |
-| Student_ID | Number | Unique student ID |
-| Hostel_Type | Choice | (Male/Female, Standard/Premium) |
-| Application_Date | Date/Time | Date of request |
+Below is the actual SharePoint/Excel schema used for hostel requests, stored under **Hostel_Applications**.  
+
+![Excel Schema](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/89980a7b-7017-495f-8083-cf538fb7d7b5.png?raw=true)
+
+| Column Name | Type | Description |
+|--------------|------|-------------|
+| Student_Name | Text | Student’s full name |
+| Student_ID | Number | Unique student identification number |
+| Hostel_Type | Choice | Category of hostel (Male/Female, Standard/Premium) |
+| Application_Date | Date/Time | Time of submission |
 | Status | Choice | Pending / Approved / Rejected |
-| Approver | Person or Group | Admin responsible for review |
+| Approver | Person | Administrator assigned for review |
 
 ---
 
-### 5.3 Teams Adaptive Card Sample  
+### 5.3 Power Automate Workflow Example  
 
-![Teams Notification](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/TEAMS%20NOTIFICATION.png?raw=true)
+![Power Automate Flow](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Accomodation%20Booking%20Cloud%20Automate%20Flow.png?raw=true)
 
-The adaptive card displays:
-- Request details (e.g., student name, hostel type, timestamp)  
-- Approve/Reject buttons  
-- Auto-refresh logic to sync status in SharePoint and notify the user instantly  
+**Workflow Description**  
+- **Trigger:** User submits hostel request via chatbot  
+- **Process:** Power Automate validates request → logs to SharePoint → sends Teams approval card  
+- **Response:** Admin approves/rejects → flow updates record and sends confirmation to student  
+
+✅ *Average approval turnaround reduced from 24 hours to under 10 minutes.*
+
+---
+
+### 5.4 Teams Adaptive Card Example  
+
+![Teams Adaptive Card](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/TEAMS%20NOTIFICATION.png?raw=true)
+
+The adaptive card provides real-time approval options for administrators, containing:
+- Student details  
+- Hostel type  
+- Submission date  
+- Approve / Reject buttons linked to Power Automate  
 
 ---
 
 ## 6. Security & Governance  
 
-| Aspect | Design Control |
-|---------|----------------|
-| **Environment Separation** | Distinct DEV and PROD environments configured in Power Platform Admin Center |
-| **Role-Based Access Control (RBAC)** | Access segregated by roles: Admin, Manager, Student |
-| **Data Protection** | SharePoint and Dataverse secured under university Microsoft 365 tenant with encryption at rest |
-| **Auditing & Logging** | Flow run history, Dataverse audit tables, and Teams message logs |
-| **Change Management** | Managed solution deployment via ALM pipelines and Solution Checker validation |
+| Area | Governance Practice |
+|-------|----------------------|
+| **Environment Management** | Separate **DEV**, **TEST**, and **PROD** environments in Power Platform |
+| **Role-Based Access Control** | Permissions segmented by role (Student, Admin, Manager) via Azure AD |
+| **Data Security** | SharePoint and Dataverse encrypted at rest and in transit |
+| **Change Control** | Managed solution deployment pipeline |
+| **Monitoring** | Flow run history, environment analytics, and audit logs |
 
-> Governance was implemented following Power Platform Center of Excellence (CoE) principles to ensure continuous compliance and traceability.
+> The governance framework aligns with Microsoft’s **Center of Excellence (CoE)** standards to ensure traceability and sustainable administration.
 
 ---
 
 ## 7. Scalability & Maintenance Plan  
 
-| Area | Approach |
-|-------|-----------|
-| **Topic Expansion** | Add modular topics (Library Access, Transcript Request, Course Registration) without re-deploying the core agent |
-| **Load Handling** | Power Automate concurrency control and environment throttling |
-| **Monitoring** | Flow analytics and Teams error logging for proactive resolution |
-| **User Feedback Loop** | Feedback topic integrated to capture user satisfaction and training data |
-| **Data Retention Policy** | 90-day auto-archive for conversation logs and requests |
-| **Versioning** | All updates packaged as managed solutions with version control on GitHub |
+| Area | Strategy |
+|-------|----------|
+| **Topic Growth** | Modular topic design for additional student services |
+| **Performance** | Power Automate concurrency and retry policy enabled |
+| **Monitoring** | Scheduled audits via Admin Center insights |
+| **Feedback Capture** | Built-in satisfaction survey topic for iterative improvement |
+| **Data Retention** | Logs archived every 90 days via automated flow |
+| **Version Control** | Solution versions managed through GitHub repository commits |
 
 ---
 
 ## 8. Dependencies & Assumptions  
 
-| Category | Details |
-|-----------|----------|
-| **Licensing** | Power Platform per-user or per-app license required |
-| **Connectivity** | Stable institutional Microsoft 365 and SharePoint infrastructure |
-| **Security** | University-managed Azure AD policies govern authentication |
-| **Data Accuracy** | Assumes source data in SharePoint is verified and up-to-date |
-| **User Adoption** | Relies on proper onboarding of students and administrative staff |
-| **Maintenance Ownership** | IT Support Team responsible for monitoring Power Automate health and SharePoint integrity |
+| Category | Detail |
+|-----------|--------|
+| **Licensing** | Requires Power Platform per-app or per-user license |
+| **Connectivity** | Reliable institutional Microsoft 365 tenant |
+| **Security** | Azure AD governs authentication and authorization |
+| **Data Reliability** | Assumes SharePoint lists are current and verified |
+| **Support** | IT Admins maintain Power Automate flows and SharePoint lists |
+| **End-User Access** | Staff and students use authenticated Microsoft accounts |
 
 ---
 
-## 9. Summary  
+## 9. Visual Summary — System Interconnection  
 
-The **Admira Autonomous Agent** successfully transforms university service delivery into a **digitally intelligent workflow ecosystem**.  
-By fusing conversational AI, process automation, and collaborative governance, Admira delivers measurable operational efficiency and a scalable foundation for future institutional automation.
+![Solution Overview](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/860c8b9c-f0f8-4644-b24a-297aeb2d8595.png?raw=true)
 
-> *The design prioritizes resilience, modularity, and real-world usability—hallmarks of enterprise-grade Power Platform solutions.*
+This illustration captures the **end-to-end automation ecosystem**, showing how Copilot Studio interacts with SharePoint, Power Automate, and Microsoft Teams in real time.
+
+---
+
+## 10. Summary  
+
+The **Admira Autonomous Agent** exemplifies a well-architected Power Platform deployment that blends automation, AI, and governance into a single cohesive framework.  
+
+By automating repetitive student interactions and ensuring data integrity, it delivers tangible efficiency gains and builds a scalable foundation for institutional digital transformation.  
+
+> *Admira isn’t just a chatbot — it’s a structured automation ecosystem designed for longevity, scalability, and measurable business value.*
 
 ---
 
@@ -162,3 +186,4 @@ By fusing conversational AI, process automation, and collaborative governance, A
 🌐 **LinkedIn:** [linkedin.com/in/solomon-okpuno-51a907312](https://linkedin.com/in/solomon-okpuno-51a907312)  
 💼 **GitHub:** [github.com/okpunosolomon](https://github.com/okpunosolomon)
 ```
+
