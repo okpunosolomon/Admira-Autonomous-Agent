@@ -2,7 +2,7 @@
 **Project:** Admira Autonomous Agent  
 **Client:** Admiral University Nigeria  
 **Consultant:** Solomon Okpuno 
-Business & Power Platform Consultant  
+**Business & Power Platform Consultant**  
 
 ---
 
