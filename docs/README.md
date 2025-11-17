@@ -1,11 +1,11 @@
-# ⚙️ Modular Documentation — Admira Autonomous Agent  
+# ⚙️ Modular Documentation Admira Autonomous Agent  
 *Comprehensive Developer & Governance Reference*
 
 ---
 
 ## 📘 Overview  
 
-The **Modular Documentation Suite** provides a structured, developer-friendly reference for understanding, maintaining, and extending the **Admira Autonomous Agent** — an enterprise-grade AI-powered student support system built for **Admiral University Nigeria** using **Microsoft Power Platform**.  
+The **Modular Documentation Suite** provides a structured, developer-friendly reference for understanding, maintaining, and extending the **Admira Autonomous Agent**, an enterprise-grade AI-powered student support system built for **Admiral University Nigeria** using **Microsoft Power Platform**.  
 
 This documentation is designed for business analysts, developers, and administrators involved in **solution lifecycle management**, ensuring transparency, governance, and continuous scalability.
 
@@ -24,7 +24,7 @@ This documentation is designed for business analysts, developers, and administra
 
 ````
 
-Each module focuses on a specific technical or functional domain within the solution — from architecture and topic logic to automation workflows and notification schemas.
+Each module focuses on a specific technical or functional domain within the solution, from architecture and topic logic to automation workflows and notification schemas.
 
 ---
 
@@ -99,7 +99,7 @@ To explain the **backend workflows** that make Admira’s chatbot intelligent an
 
 ### ⚙️ Power Automate Overview  
 
-Admira’s workflows manage the lifecycle of each request — from form capture to approval and notification.
+Admira’s workflows manage the lifecycle of each request, from form capture to approval and notification.
 
 ![Automation Flow](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Accomodation%20Booking%20Cloud%20Automate%20Flow.png?raw=true)  
 *Figure 2: Hostel Booking Workflow powered by Power Automate.*
@@ -186,7 +186,7 @@ To define **Teams Adaptive Card notifications**, their structure, and Power Auto
 ## 🧠 Summary
 
 The **Modular Documentation** structure provides Admira’s project stakeholders with a transparent, well-governed framework.
-Each `.md` file forms part of a complete **operational blueprint** — enabling faster onboarding, simplified maintenance, and reliable scalability.
+Each `.md` file forms part of a complete **operational blueprint**, enabling faster onboarding, simplified maintenance, and reliable scalability.
 
 > **Admira Autonomous Agent** stands as a living model of Power Platform governance — combining conversational AI, workflow automation, and data intelligence under one unified system.
 
