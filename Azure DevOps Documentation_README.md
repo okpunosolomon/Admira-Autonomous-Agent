@@ -6,7 +6,7 @@
 ## 🧠 Executive Overview  
 
 The **Admira Autonomous Agent** is an enterprise-grade, AI-powered student engagement system built on the **Microsoft Power Platform**.  
-It streamlines student services—**tuition fee inquiries**, **hostel booking**, **result checking**, and **admission status verification**—into a single, intelligent conversational interface powered by **Copilot Studio** and **Power Automate**.  
+It streamlines student services—**tuition fee inquiries**, **hostel booking**, **result checking**, and **admission status verification** into a single, intelligent conversational interface powered by **Copilot Studio** and **Power Automate**.  
 
 **Objective:**  
 Deliver a secure, scalable, and fully governed automation framework that enhances responsiveness, transparency, and student experience across Admiral University’s academic operations.
@@ -32,6 +32,7 @@ Deliver a secure, scalable, and fully governed automation framework that enhance
 The **Azure DevOps Board** tracked all work items from backlog creation to bug resolution, maintaining full visibility and control of sprint progress.  
 
 ![Azure DevOps Overview Board](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Azure%20DevOps%20Overview%20Board.png?raw=true)
+
 *Figure 1: Admira project Kanban view showing Backlog → In Progress → Testing → Bugs.*
 
 This board ensured traceability between epics, user stories, and deployment milestones.
@@ -70,8 +71,8 @@ This board ensured traceability between epics, user stories, and deployment mile
 
 **Workflow Reference**  
 The following workflow illustrates end-to-end automation from student inquiry to resolution.  
+![Process Workflow](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/Process%20Workflow.png?raw=true)
 
-![Process Workflow](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/d5c67f8f-57e0-4992-beeb-32a3d3d90b5e.png?raw=true)  
 *Figure 2: Automation workflow linking Copilot Studio, Power Automate, SharePoint, and Teams.*
 
 **Resolved Bugs**
@@ -173,11 +174,14 @@ The following workflow illustrates end-to-end automation from student inquiry to
 ## 👨🏽‍💼 Contact
 
 **Consultant / Scrum Master:** **Solomon Okpuno**
+
 📧 [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)
+
 🔗 [linkedin.com/in/solomon-okpuno-51a907312](https://linkedin.com/in/solomon-okpuno-51a907312)
+
 💻 [github.com/okpunosolomon](https://github.com/okpunosolomon)
 
 ---
 
-> *This DevOps delivery summary demonstrates how AI-driven automation, built through Power Platform, can redefine student support operations in higher education — uniting speed, governance, and intelligent workflow management.*
+> *This DevOps delivery summary demonstrates how AI-driven automation, built through Power Platform, can redefine student support operations in higher education uniting speed, governance, and intelligent workflow management.*
 
