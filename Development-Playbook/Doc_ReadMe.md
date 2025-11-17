@@ -1,4 +1,4 @@
-# 🚀 Development Playbook — Admira Autonomous Agent  
+# Development Playbook  Admira Autonomous Agent  
 *Repeatable Build-to-Deployment Standards for Scalable Power Platform Solutions*
 
 ---
