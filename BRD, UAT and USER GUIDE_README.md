@@ -1,174 +1,249 @@
-
-# 📘 Business Requirements Document (BRD)
-**Project:** Admira Autonomous Agent  
+# 📄 BRD, UAT & User Guide — Admira Autonomous Agent  
 **Client:** Admiral University Nigeria  
 **Consultant:** Solomon Okpuno – Business & Power Platform Consultant  
+**Platform:** Microsoft Power Platform (Copilot Studio, Power Automate, SharePoint, Teams)
 
 ---
 
-## 🎯 Business Objectives
-- Automate routine student interactions (tuition, hostel, results, admission).  
-- Reduce administrative workload by 80 %.  
-- Deliver a 24/7 digital self-service channel through Microsoft Power Platform.  
-- Ensure data consistency and audit transparency using governed workflows.
+## 🧭 Executive Overview  
+
+The **Admira Autonomous Agent** is a 24/7 intelligent virtual assistant designed to modernize student engagement and administrative communication at **Admiral University Nigeria**.  
+Built on Microsoft’s Power Platform, it automates repetitive student queries and workflows such as **tuition breakdowns, hostel applications, result inquiries, and admission status verification**.  
+
+The project serves as a benchmark for how higher education institutions can combine **AI conversation design, Power Automate orchestration, and Microsoft 365 governance** into one secure, auditable solution.
 
 ---
 
-## 📚 Scope
+## 🎯 Business Requirements Document (BRD)
+
+### 1. Business Goals  
+- Provide **always-available digital support** for students and applicants.  
+- Reduce manual administrative workload through process automation.  
+- Ensure **data accuracy, traceability, and compliance** with university policies.  
+- Deliver measurable improvements in **service response time** and **student satisfaction**.  
+
+---
+
+### 2. Key Drivers & Challenges  
+
+| Business Challenge | Pain Point | Strategic Response |
+|--------------------|-------------|--------------------|
+| Rising student inquiries | Long queues, delayed replies | Introduce a conversational AI interface |
+| Manual hostel and tuition tracking | Errors, lost data | Automate request submission & approvals |
+| Fragmented communication | No single information source | Unify Teams, SharePoint, and Copilot Studio |
+| Poor visibility | Difficult to audit workflows | Add Power Automate logging & analytics layer |
+
+---
+
+### 3. Scope Definition  
 
 | In Scope | Out of Scope |
 |-----------|--------------|
-| Tuition query automation | Third-party payment gateway integration (future) |
-| Hostel application flow | ERP integration (Phase 4) |
-| Result check guidance | Direct grade upload by lecturers |
-| Admission status support | Offline mobile support |
+| Tuition fee inquiry automation | Integration with bank/payment gateway (future) |
+| Hostel application process & approvals | Offline chatbot support |
+| Admission status & result inquiry | Integration with Student ERP (future phase) |
+| Notifications via Teams Adaptive Cards | Direct SMS notification (optional) |
 
 ---
 
-## 📊 Key Performance Indicators (KPIs)
+### 4. Success Metrics (KPIs)
 
-| KPI | Baseline | Target (After Admira) |
-|------|-----------|----------------------|
-| Average response time | 48 hrs | < 2 mins |
-| Student support emails per week | 300 + | ≤ 60 |
-| Manual approval delay | 24 hrs | ≤ 10 mins |
-| Student satisfaction | 65 % | ≥ 95 % |
-
----
-
-## 👥 Stakeholder Mapping
-
-| Role | Responsibility |
-|------|----------------|
-| **Project Sponsor** – Vice Chancellor | Strategic oversight and budget approval |
-| **Product Owner** – IT Asset Manager | Defines requirements and acceptance criteria |
-| **Consultant** – Solomon Okpuno | Solution design and implementation |
-| **Admin Team** | Daily operation and support |
-| **Students / End Users** | Interaction and feedback |
+| Metric | Baseline | Target |
+|---------|-----------|--------|
+| Average support response time | 48 hours | < 2 minutes |
+| Manual approvals | 100% manual | 90% automated |
+| Student satisfaction score | 65% | 95% |
+| Admin workload | High | Reduced by 80% |
+| Visibility of requests | Low | Fully auditable in SharePoint & Teams |
 
 ---
 
-## 🧭 Success Criteria
-- Full conversational coverage for key topics.  
-- Measurable improvement in SLA response times.  
-- Secure deployment following CoE governance policy.  
-- Positive user feedback within first 30 days of launch.
+### 5. Stakeholder Matrix  
 
----
-```
-
----
-
-### `/Documentation/UAT.md`
-
-```markdown
-# ✅ User Acceptance Testing (UAT)
-**Project:** Admira Autonomous Agent  
+| Role | Department | Responsibility |
+|------|-------------|----------------|
+| **Project Sponsor** | Office of the Vice-Chancellor | Strategic oversight |
+| **Product Owner** | ICT / MIS | Defines functional priorities |
+| **Solution Consultant** | Enluka Consultancy (Solomon Okpuno) | Design, implementation, training |
+| **IT Administrator** | IT Support | Flow management, user access |
+| **End Users** | Students & Staff | Day-to-day chatbot interaction |
 
 ---
 
-## 🎯 Purpose
-Confirm that each topic and workflow functions as expected before go-live.
+### 6. High-Level Requirements  
+
+| Category | Description | Expected Outcome |
+|-----------|-------------|------------------|
+| Functional | AI chatbot handles tuition, hostel, and result requests | Reduced dependency on admin staff |
+| Automation | Power Automate workflows trigger from chatbot | Real-time processing |
+| Data | SharePoint stores structured records | Central data repository |
+| Communication | Teams adaptive cards for notifications | Instant visibility & approval |
+| Governance | Role-based access control | Secure & compliant environment |
 
 ---
 
-## 🧪 Test Scenarios
+### 7. Dependencies & Assumptions  
 
-| ID | Scenario | Steps | Expected Result | Status |
-|----|-----------|--------|-----------------|--------|
-| UAT-001 | Tuition Fee Breakdown | Student asks “Show Engineering fees.” | Displays correct faculty and level fees | ✅ Pass |
-| UAT-002 | Hostel Application | Student applies for hostel room | Request logged to SharePoint and Teams card sent | ✅ Pass |
-| UAT-003 | Approval Process | Admin approves hostel via Teams card | Status updated to *Approved* and student notified | ✅ Pass |
-| UAT-004 | Result Check | Student asks “How can I see my result?” | Bot guides to portal link or API response | ✅ Pass |
-| UAT-005 | Admission Status | Prospective student checks status | Returns “Admitted / Not Admitted” message | ✅ Pass |
-| UAT-006 | Escalation Flow | Unhandled query detected | Transferred to human support queue | ✅ Pass |
+| Dependency | Assumption |
+|-------------|-------------|
+| Microsoft 365 tenant | Licensed and operational |
+| Power Platform environment | DEV → TEST → PROD available |
+| User authentication | Azure AD enforced |
+| SharePoint lists | Properly maintained datasets |
+| Teams connectivity | Enabled for all staff and admin roles |
 
 ---
 
-## 🧾 Sign-off
+## ✅ User Acceptance Testing (UAT)
+
+### 1. UAT Purpose  
+Validate that Admira performs all critical workflows accurately and consistently before production rollout.
+
+---
+
+### 2. UAT Environment Setup  
+- **Environment:** TEST instance (Power Platform Sandbox)  
+- **Participants:** Admin, Product Owner, End-User Representatives  
+- **Duration:** 1 week (functional + regression testing)  
+- **Data Source:** SharePoint Lists + Excel dataset  
+
+---
+
+### 3. Test Cases & Results  
+
+| ID | Scenario | Expected Behaviour | Result | Status |
+|----|-----------|--------------------|--------|--------|
+| UAT-001 | Tuition Inquiry | Displays correct tuition details by faculty/level | Correct output | ✅ Pass |
+| UAT-002 | Hostel Request Submission | Form captured and stored in SharePoint | Successful | ✅ Pass |
+| UAT-003 | Hostel Approval | Teams adaptive card received by admin | Approval recorded | ✅ Pass |
+| UAT-004 | Result Check | Student guided to result portal or summary | Correct redirection | ✅ Pass |
+| UAT-005 | Admission Status Query | Bot responds with admission outcome | Works as expected | ✅ Pass |
+| UAT-006 | Escalation Path | Unresolved query routed to human agent | Routed properly | ✅ Pass |
+| UAT-007 | Notification Feedback | Adaptive card triggers acknowledgment | Response captured | ✅ Pass |
+
+---
+
+### 4. UAT Sign-Off  
 
 | Role | Name | Signature | Date |
-|-------|------|------------|------|
-| Project Sponsor |   |   |   |
-| Product Owner |   |   |   |
-| Consultant | Solomon Okpuno | ✅ |   |
-
----
-```
+|------|------|------------|------|
+| Product Owner | | | |
+| IT Administrator | | | |
+| Consultant | **Solomon Okpuno** | ✅ | |
 
 ---
 
-### `/Documentation/User-Guide.md`
+## 👩🏽‍💻 User Guide  
 
-```markdown
-# 👩🏽‍💻 User Guide – Admira Autonomous Agent  
-**Audience:** Students and Administrators of Admiral University Nigeria  
+### 1. Accessing Admira  
 
----
-
-## 🧭 Access
-1. Visit [https://make.powerapps.com](https://make.powerapps.com) or the university chat portal.  
-2. Launch **Admira Autonomous Agent**.  
-3. Sign in with your Microsoft 365 university account.
+1. Navigate to the chatbot link or university portal.  
+2. Sign in with your **Microsoft 365 university credentials**.  
+3. Begin interaction via web chat or embedded Teams interface.  
 
 ---
 
-## 👤 User Roles
+### 2. User Roles & Permissions  
 
-| Role | Capabilities |
-|-------|----------------|
-| Student | Ask questions, submit requests, view notifications |
-| Admin | Approve/reject requests, view dashboards |
-| IT Support | Manage flows, connections, and logs |
+| Role | Description | Key Privileges |
+|------|-------------|----------------|
+| **Student** | General user | Submit requests, view responses |
+| **Manager/Admin** | Departmental approver | Approve, reject, escalate |
+| **IT Admin** | System owner | Manage flows, troubleshoot errors |
+| **Consultant** | Governance advisor | Maintain ALM and CoE compliance |
 
 ---
 
-## 🧩 Key Topics & Actions
+### 3. Core Chatbot Topics  
 
-### 🎓 Tuition Inquiry
-Type: “Show tuition fees for Science 300 level.”  
-→ Admira displays faculty-specific fee breakdown with ICT and library charges.
+#### 🎓 Tuition Fee Breakdown  
+**Prompt Example:** “What’s my tuition for 400-level Engineering?”  
+- Admira fetches relevant data from SharePoint.  
+- Response includes base tuition + additional fees (ICT, Library, Health).  
+- Option to download breakdown via adaptive card.  
 
-### 🏘️ Hostel Application
+#### 🏘️ Hostel Application & Allocation  
+**Steps:**  
 1. Type “Apply for hostel.”  
-2. Bot collects name, ID, hostel type.  
-3. Confirmation sent to Teams and SharePoint record created.  
-4. Admin approves or rejects via Teams adaptive card.  
-5. Student receives status update instantly.
+2. Fill details (name, level, hostel type).  
+3. Flow logs data into SharePoint.  
+4. Admin receives approval card in Teams.  
+5. Approval outcome triggers student notification.  
 
-### 📊 Semester Result Check
-Ask “How can I view my result?” → Bot guides to portal or fetches API summary.
+#### 📊 Semester Result Inquiry  
+**Prompt Example:** “Show me my semester result.”  
+Admira guides the student to the secure result portal or displays a summary via preconfigured API reference.
 
-### 🧾 Admission Status
-Query “Check my admission status.” → Immediate confirmation with next steps.
-
----
-
-## 💬 Teams Notifications
-Admins receive adaptive cards with Approve/Reject buttons.  
-Each action automatically updates SharePoint and notifies students in Teams chat.
+#### 🧾 Admission Status Check  
+Prospective students can confirm admission offers instantly with follow-up steps for enrollment and documentation.
 
 ---
 
-## 🛠️ Troubleshooting
+### 4. Teams Notifications  
 
-| Issue | Resolution |
-|--------|-------------|
-| Bot not responding | Check internet connection or Teams permissions. |
-| Notification delay | Verify Power Automate flow run history. |
-| Wrong data displayed | Confirm SharePoint list entries and faculty mapping. |
+| Type | Description |
+|------|-------------|
+| **Approval Cards** | Sent to admin via Teams for real-time decisioning |
+| **Student Alerts** | Confirm request submission or outcome |
+| **Escalation Alerts** | Notify consultant or IT if a flow fails |
 
----
-
-## 🧠 Support & Training
-- Email: [support@sol-ltd.com](mailto:support@sol-ltd.com)  
-- Contact: IT Support – Admiral University Nigeria  
-- Consultant: Solomon Okpuno   
+Each notification uses adaptive card JSON schema to provide interactive buttons and traceable responses.
 
 ---
 
-> *Admira simplifies student support through automation and collaboration — bringing every interaction closer to instant service.*
+### 5. Troubleshooting  
+
+| Issue | Possible Cause | Resolution |
+|--------|----------------|-------------|
+| Chatbot not responding | User not authenticated | Sign out/in through Microsoft 365 |
+| Wrong tuition data | Old SharePoint dataset | Verify and refresh dataset |
+| Missing Teams notification | Flow timeout | Re-run flow or check connector |
+| Rejected request not logged | Missing permissions | Reassign admin access in Azure AD |
+
+---
+
+### 6. Support & Training  
+
+| Channel | Purpose | Contact |
+|----------|----------|----------|
+| Teams Chat | Quick help & real-time troubleshooting | IT Admin |
+| Email | Issue escalation or bug report | support@sol-ltd.com |
+| Training Session | End-user enablement | Monthly via Teams |
+| Consultant | Project advisory | **Solomon Okpuno** |
+
+---
+
+### 7. Governance & Compliance Highlights  
+
+- **Deployment Type:** Managed solution (Admira_1_0_0_1.zip)  
+- **Environment Control:** DEV → TEST → PROD with version tracking  
+- **Audit Logging:** Power Automate run history retained for 90 days  
+- **Security:** Azure AD role enforcement and DLP policies applied  
+- **Backup Strategy:** Weekly export of SharePoint data and solution package  
+
+---
+
+## 🧩 Continuous Improvement Roadmap  
+
+| Phase | Enhancement | Description |
+|--------|--------------|-------------|
+| **Phase 2** | Power BI Dashboards | Visualize chatbot performance and SLA metrics |
+| **Phase 3** | Multilingual Support | Enable Yoruba, Hausa, Igbo |
+| **Phase 4** | ERP Integration | Connect Dataverse to student information systems |
+| **Phase 5** | Predictive Analytics | Use AI Builder for trend and intent prediction |
+
+---
+
+## 🧠 Conclusion  
+
+Admira Autonomous Agent has transformed student engagement from manual to intelligent automation.  
+By combining **Copilot Studio, Power Automate, Teams, and SharePoint**, Admiral University now operates with faster communication, better governance, and higher transparency.
+
+> *“Admira proves that when AI meets governance, institutions evolve from reactive service to proactive experience.”*
+
+---
+
+📧 **Consultant:** [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)  
+🌐 **LinkedIn:** [linkedin.com/in/solomon-okpuno-51a907312](https://linkedin.com/in/solomon-okpuno-51a907312)  
+💼 **GitHub:** [github.com/okpunosolomon](https://github.com/okpunosolomon)
 ```
-
----
-
