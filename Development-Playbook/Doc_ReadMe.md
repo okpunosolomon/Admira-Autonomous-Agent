@@ -136,7 +136,7 @@ If post-deployment issues occur, restore previous managed solution and switch fl
 This **Development Playbook** transforms Admira into a **repeatable Power Platform framework** — one that combines structure, agility, and governance.  
 It standardizes how future chatbots or intelligent agents are built, deployed, and managed, ensuring enterprise compliance and long-term sustainability.  
 
-> *Every enhancement begins with structure — this playbook keeps Admira enterprise-ready from ideation to operation.*
+> *Every enhancement begins with structure, this playbook keeps Admira enterprise-ready from ideation to operation.*
 
 ---
 
