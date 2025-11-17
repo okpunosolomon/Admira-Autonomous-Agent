@@ -1,3 +1,4 @@
+
 # 🤖 Admira Autonomous Agent 
 **Admiral University Nigeria**  
 *AI-Powered Student Engagement System Built on Microsoft Power Platform*
@@ -91,6 +92,18 @@ The architecture allows **real-time data flow** between Power Platform component
 
 ---
 
+#### 📊 After Adaptive Card Submission — Data Entry Confirmation  
+
+Once an administrator or student completes a hostel booking request through Admira, the approved record is automatically stored in SharePoint and surfaced in Excel format for auditability and reporting.  
+
+The image below shows a real-time dataset generated **after adaptive card submission**, confirming seamless data integration between **Copilot Studio**, **Power Automate**, and **SharePoint**.  
+
+![After Hostel Booking Was Submitted](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/AFTER%20HOSTEL%20BOOKING%20WAS%20SUBMITED.png?raw=true)
+
+*Each entry includes student details, faculty, level, hostel preference, room type, and email — forming a live operational record for administrators.*
+
+---
+
 ### Example 2: Tuition Fee Breakdown  
 
 The Tuition topic retrieves relevant fee information from SharePoint using PowerFx conditions embedded in Copilot Studio.  
@@ -147,6 +160,7 @@ Admira-Autonomous-Agent/
 │   ├── Accomodation Booking Cloud Automate Flow.png
 │   ├── TEAMS NOTIFICATION.png
 │   ├── Systematic Process to AI Build.png
+│   ├── AFTER HOSTEL BOOKING WAS SUBMITED.png
 │   └── Project & Purpose.png
 │
 └── README.md
@@ -221,16 +235,12 @@ By connecting people, data, and automation, Admira demonstrates how institutions
 > **Admira represents the next generation of student engagement, automated, scalable, and human-centered.**
 
 ---
+
 ## 👨🏽‍💼 Consultant
 
 **Solomon Okpuno**
 *Business & Power Platform Consultant*
 
 📧 [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)
-
-🌐 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312) 
-
-
+🌐 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312)
 [GitHub](https://github.com/okpunosolomon)
-
----
