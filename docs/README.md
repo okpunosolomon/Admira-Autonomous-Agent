@@ -188,12 +188,13 @@ To define **Teams Adaptive Card notifications**, their structure, and Power Auto
 The **Modular Documentation** structure provides Admira’s project stakeholders with a transparent, well-governed framework.
 Each `.md` file forms part of a complete **operational blueprint**, enabling faster onboarding, simplified maintenance, and reliable scalability.
 
-> **Admira Autonomous Agent** stands as a living model of Power Platform governance — combining conversational AI, workflow automation, and data intelligence under one unified system.
+> **Admira Autonomous Agent** stands as a living model of Power Platform governance  combining conversational AI, workflow automation, and data intelligence under one unified system.
 
 ---
 
 👨🏽‍💼 **Consultant:** [Solomon Okpuno](https://linkedin.com/in/solomon-okpuno-51a907312)
 *Business & Power Platform Consultant*
+
 📧 [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)
 🌐 [GitHub Profile](https://github.com/okpunosolomon)
 
