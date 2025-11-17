@@ -86,7 +86,7 @@ This closed-loop ensures every interaction is logged, auditable, and consistent.
 
 ### 5.2 SharePoint / Excel Schema  
 
-![Excel Schema](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/89980a7b-7017-495f-8083-cf538fb7d7b5.png?raw=true)  
+![Excel and SharePoint Schema](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/defef0d3-5f4e-47c0-98de-9005b9521ab6.png?raw=true)
 *Figure 2: Hostel_Applications schema showing key data columns.*
 
 | Column Name | Type | Description |
