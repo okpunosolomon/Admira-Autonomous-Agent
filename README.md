@@ -92,7 +92,7 @@ The architecture allows **real-time data flow** between Power Platform component
 
 ---
 
-#### 📊 After Adaptive Card Submission — Data Entry Confirmation  
+#### 📊 After Adaptive Card Submission - Data Entry Confirmation  
 
 Once an administrator or student completes a hostel booking request through Admira, the approved record is automatically stored in SharePoint and surfaced in Excel format for auditability and reporting.  
 
@@ -100,7 +100,7 @@ The image below shows a real-time dataset generated **after adaptive card submis
 
 ![After Hostel Booking Was Submitted](https://github.com/okpunosolomon/Admira-Autonomous-Agent/blob/main/Visuals/AFTER%20HOSTEL%20BOOKING%20WAS%20SUBMITED.png?raw=true)
 
-*Each entry includes student details, faculty, level, hostel preference, room type, and email — forming a live operational record for administrators.*
+*Each entry includes student details, faculty, level, hostel preference, room type, and email  forming a live operational record for administrators.*
 
 ---
 
@@ -242,5 +242,7 @@ By connecting people, data, and automation, Admira demonstrates how institutions
 *Business & Power Platform Consultant*
 
 📧 [solomon.okpuno@outlook.com](mailto:solomon.okpuno@outlook.com)
+
 🌐 [LinkedIn](https://linkedin.com/in/solomon-okpuno-51a907312)
+
 [GitHub](https://github.com/okpunosolomon)
